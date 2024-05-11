@@ -118,10 +118,10 @@ def main():
     p.set_things(THINGS)
     k.set_things(THINGS)
     players = [p, k]
-
+    attacker = players[0]
+    defender = players[1]
     while len(players) > 1:
-        attacker = players[0]
-        defender = players[1]
+
         # {атакующий персонаж} наносит удар по {защищающийся персонаж} на {кол-во урона} урона
         defender.life_damage(attacker.attack_damage())
 
