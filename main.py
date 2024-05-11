@@ -84,11 +84,11 @@ def main():
 
     # ШАГ 1. СОЗДАНИЕ ПРОИЗВОЛЬНОГО КОЛ-ВА ВЕЩЕЙ С ЗАЩИТА < 10%
     THINGS = [
-        Thing('Sword', 5, 20, 100),
-        Thing('Hamlet', 8, 0, 50),
-        Thing('Armor', 10, 0, 80),
-        Thing('Shield', 7, 0, 70),
-        Thing('Belt', 3, 0, 30)
+        Thing('Sword', 0.05, 20, 100),
+        Thing('Hamlet', 0.08, 0, 50),
+        Thing('Armor', 0.1, 0, 80),
+        Thing('Shield', 0.07, 0, 70),
+        Thing('Belt', 0.03, 0, 30)
     ]
     THINGS = sorted(THINGS, key=lambda x: x.defence_percent)
     # ШАГ 2. СОЗДАНИЕ СПИСКА 10 ОБЪЕКТОВ ПЕРСОНАЖЕЙ
